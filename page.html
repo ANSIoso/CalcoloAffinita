@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/06d84ce8cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="input-div">
+            <div class="name-input">
+                <input type="text" class="input" id="name1" name="name1"> 
+                
+                <div class="center-container">
+                    <i class="fa-solid fa-rotate-right glow-btn center-element" onclick="reset_label('name1')"></i>
+                </div>
+            </div>
+            
+            <div class="role-div">
+                <div class="center-container">
+                    <i class="center-element fa-solid fa-arrow-up-long"></i>
+                </div>
+                
+                KISSER
+
+                <div class="center-container">
+                    <i class="center-element fa-solid fa-arrows-rotate glow-btn" onclick="switch_names()"></i> 
+                </div>
+                
+                KISSED
+                
+                <div class="center-container">
+                    <i class="center-element fa-solid fa-arrow-down-long"></i>
+                </div>
+            </div> 
+            
+            <div class="name-input">
+                <input type="text" class="input" id="name2" name="name2"> 
+                
+                <div class="center-container">
+                    <i class="fa-solid fa-rotate-right glow-btn center-element" onclick="reset_label('name2')"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="calculation-div">
+        </div>
+        
+        <div class="submit-div">
+            <button class="submitt" onclick="submit_function()">CALCULATE</button>
+        </div>
+    </div>
+
+    <div id="percentage-div">
+        <div id="percentage-bar"></div>
+    </div>
+</body>
+
+</html>
